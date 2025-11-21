@@ -1,5 +1,6 @@
 name: "First Github Action Demo"
-on: [push]
+on: 
+    workflow_dispatch:
 jobs:
     Job1-Run-On-Ubuntu:
         runs-on: ubuntu-latest
