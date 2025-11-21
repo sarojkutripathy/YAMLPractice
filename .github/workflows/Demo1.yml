@@ -8,4 +8,11 @@ jobs:
             - run: echo "Current OS is ${{runner.os}}"
             - run: pwd
             - run: ls ~
-            - run: ls ${{github.workspace}} 
+            - run: ls ${{github.workspace}}
+    Job-Message-Actions-Windows:
+        runs-on: windows-latest
+        steps:
+          - name: Get List of Firewall Inbound Rules
+            shell: pwsh
+            run: |
+              Get-NetFirewallRule -Direction Inbound  
