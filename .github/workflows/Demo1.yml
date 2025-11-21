@@ -4,4 +4,4 @@ jobs:
     Job1-Run-On-Ubuntu:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "Welcome to Github Action using YAML"
+            - run: echo "Welcome to Github Action using  YAML"
