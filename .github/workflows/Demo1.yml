@@ -5,7 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: echo "Welcome to Github Action using  YAML"
-            - run: echo "Current OS is ${{runner.os}}
+            - run: echo "Current OS is ${{runner.os}}"
             - run: pwd
             - run: ls ~
             - run: ls ${{github.workspace}} 
