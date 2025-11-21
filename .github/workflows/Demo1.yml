@@ -15,7 +15,7 @@ jobs:
           - name: Get List of Firewall Inbound Rules
             shell: pwsh
             run: |
-              Get-NetFirewallRule -Direction InboundTesting-Job-onMac:
+              Get-NetFirewallRule -Direction Inbound
     Testing-Job-onMac:
         runs-on: macos-latest
         steps:
