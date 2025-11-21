@@ -15,4 +15,18 @@ jobs:
           - name: Get List of Firewall Inbound Rules
             shell: pwsh
             run: |
-              Get-NetFirewallRule -Direction Inbound  
+              Get-NetFirewallRule -Direction InboundTesting-Job-onMac:
+    Testing-Job-onMac:
+        runs-on: macos-latest
+        steps:
+          - name: Check out Current Repository
+            uses: actions/checkout@v3
+ 
+          - name: Install Github CLI
+            run: |
+              brew update
+              brew install gh
+          - name: Install Microsoft Edge
+            run: |
+              brew update
+              brew install --cask microsoft-edge          
